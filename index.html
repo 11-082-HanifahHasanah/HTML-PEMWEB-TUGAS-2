@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Website ITERA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f7fa;
+      color: #222;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      border-bottom: 4px solid #d4af37;
+      background: #fff;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .brand-text h1 {
+      margin: 0;
+      font-size: 1.6rem;
+      color: #0b63c6;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #0b63c6;
+      font-weight: bold;
+    }
+    main, section, article, aside {
+      background: #fff;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    h2, h3 {
+      color: #0b63c6;
+      margin-bottom: 10px;
+    }
+    .fakultas-logos {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .fakultas-logos .card {
+      text-align: center;
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      width: 200px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px 12px;
+    }
+    th {
+      background: #0b63c6;
+      color: #fff;
+    }
+    tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+    #info {
+      background: #fff8e1;
+      border-left: 5px solid #d4af37;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input, textarea, button {
+      padding: 10px;
+      border: 1px solid #bbb;
+      border-radius: 6px;
+    }
+    button {
+      background: #0b63c6;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      background: #fff;
+      border-top: 3px solid #d4af37;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="images/logo.png" alt="Logo ITERA" width="100" />
+      <div class="brand-text">
+        <h1>Website ITERA</h1>
+        <p>Pengembangan Aplikasi Web</p>
+      </div>
+    </div>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="#fakultas">Fakultas</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero / Deskripsi ITERA -->
+    <section id="hero">
+      <h2>Institut Teknologi Sumatera (ITERA)</h2>
+      <p>
+        Institut Teknologi Sumatera, disingkat ITERA, adalah sebuah perguruan tinggi negeri yang terdapat di Provinsi Lampung di Pulau Sumatra.
+        Lokasinya berada di antara wilayah Kabupaten Lampung Selatan dengan Kota Bandar Lampung. ITERA didirikan berdasarkan Peraturan Presiden
+        Nomor 124 Tahun 2014 tentang Pendirian Institut Teknologi Sumatera yang
+        ditetapkan Presiden Republik Indonesia Dr. H. Susilo Bambang Yudhoyono pada tanggal 6 Oktober 2014.
+      </p>
+    </section>
+
+    <!-- Fakultas ITERA -->
+    <section id="fakultas">
+      <h2>Fakultas di ITERA</h2>
+      <div class="fakultas-logos">
+        <article class="card">
+          <figure>
+            <img src="images/fs.png" alt="Logo Fakultas Sains" width="100" />
+            <figcaption>Fakultas Sains</figcaption>
+          </figure>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="images/fti.png" alt="Logo Fakultas Teknologi Industri" width="100" />
+            <figcaption>Fakultas Teknologi Industri</figcaption>
+          </figure>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="images/ftik.png" alt="Logo Fakultas Teknologi Infrastruktur & Kewilayahan" width="100" />
+            <figcaption>Fakultas Teknologi Infrastruktur & Kewilayahan</figcaption>
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <!-- Program Studi -->
+    <section id="prodi">
+      <h2>Daftar Program Studi ITERA</h2>
+
+      <article>
+        <h3>Fakultas Sains (FS)</h3>
+        <table>
+          <caption>Program Studi Fakultas Sains</caption>
+          <thead>
+            <tr><th>No</th><th>Program Studi</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Biologi</td></tr>
+            <tr><td>2</td><td>Farmasi</td></tr>
+            <tr><td>3</td><td>Fisika</td></tr>
+            <tr><td>4</td><td>Kimia</td></tr>
+            <tr><td>5</td><td>Matematika</td></tr>
+            <tr><td>6</td><td>Sains Aktuaria</td></tr>
+            <tr><td>7</td><td>Sains Atmosfer dan Keplanetan</td></tr>
+            <tr><td>8</td><td>Sains Data</td></tr>
+            <tr><td>9</td><td>Sains Lingkungan dan Kelautan</td></tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article>
+        <h3>Fakultas Teknologi Industri (FTI)</h3>
+        <table>
+          <caption>Program Studi Fakultas Teknologi Industri</caption>
+          <thead>
+            <tr><th>No</th><th>Program Studi</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Rekayasa Instrumentasi dan Automasi</td></tr>
+            <tr><td>2</td><td>Rekayasa Kehutanan</td></tr>
+            <tr><td>3</td><td>Rekayasa Keolahragaan</td></tr>
+            <tr><td>4</td><td>Rekayasa Kosmetik</td></tr>
+            <tr><td>5</td><td>Rekayasa Minyak dan Gas</td></tr>
+            <tr><td>6</td><td>Teknik Biomedis</td></tr>
+            <tr><td>7</td><td>Teknik Biosistem</td></tr>
+            <tr><td>8</td><td>Teknik Elektro</td></tr>
+            <tr><td>9</td><td>Teknik Fisika</td></tr>
+            <tr><td>10</td><td>Teknik Geofisika</td></tr>
+            <tr><td>11</td><td>Teknik Geologi</td></tr>
+            <tr><td>12</td><td>Teknik Industri</td></tr>
+            <tr><td>13</td><td>Teknik Informatika</td></tr>
+            <tr><td>14</td><td>Teknik Kimia</td></tr>
+            <tr><td>15</td><td>Teknik Material</td></tr>
+            <tr><td>16</td><td>Teknik Mesin</td></tr>
+            <tr><td>17</td><td>Teknik Pertambangan</td></tr>
+            <tr><td>18</td><td>Teknik Sistem Energi</td></tr>
+            <tr><td>19</td><td>Teknik Telekomunikasi</td></tr>
+            <tr><td>20</td><td>Teknologi Industri Pertanian</td></tr>
+            <tr><td>21</td><td>Teknologi Pangan</td></tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article>
+        <h3>Fakultas Teknologi Infrastruktur & Kewilayahan (FTIK)</h3>
+        <table>
+          <caption>Program Studi Fakultas Teknologi Infrastruktur & Kewilayahan</caption>
+          <thead>
+            <tr><th>No</th><th>Program Studi</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Teknik Sipil</td></tr>
+            <tr><td>2</td><td>Perencanaan Wilayah dan Kota</td></tr>
+            <tr><td>3</td><td>Teknik Geomatika</td></tr>
+            <tr><td>4</td><td>Teknik Lingkungan</td></tr>
+            <tr><td>5</td><td>Teknik Kelautan</td></tr>
+            <tr><td>6</td><td>Desain Komunikasi Visual</td></tr>
+            <tr><td>7</td><td>Arsitektur Lanskap</td></tr>
+            <tr><td>8</td><td>Teknik Perkeretaapian</td></tr>
+            <tr><td>9</td><td>Rekayasa Tata Kelola Air Terpadu</td></tr>
+            <tr><td>10</td><td>Pariwisata</td></tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+
+    <!-- Fasilitas ITERA -->
+    <section id="fasilitas">
+      <h2>Fasilitas ITERA</h2>
+      <p>ITERA ditargetkan menjadi center of excellence atau pusat unggulan sains dan teknologi di Pulau Sumatera...</p>
+    </section>
+
+    <!-- Info Kampus -->
+    <aside id="info">
+      <h3>Info Kampus</h3>
+      <p>ITERA memiliki lebih dari 30 program studi dan terus berkembang.</p>
+      <ul>
+        <li><a href="https://www.itera.ac.id/">Website Resmi ITERA</a></li>
+      </ul>
+    </aside>
+
+    <!-- Kontak -->
+    <section id="kontak">
+      <h2>Kontak</h2>
+      <form>
+        <label for="name">Nama</label>
+        <input id="name" type="text" required>
+        <label for="email">Email</label>
+        <input id="email" type="email">
+        <label for="message">Pesan</label>
+        <textarea id="message" rows="4"></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <address>&copy; 2025 - Informatika ITERA. Semua Hak Dilindungi.</address>
+  </footer>
+</body>
+</html>
